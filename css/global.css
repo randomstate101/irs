@@ -20,7 +20,7 @@ h2 {
     font-size: 36px;
 }
 .main { 
-    background: #f8f8f8;
+    
     padding: 150px 0;
 }
 .clear { clear: both; }
@@ -30,6 +30,10 @@ body {
     color: $black-color;
     background: #f8f8f8;
     font-weight: 400;
+    background-image: url('jsw_signup.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     font-family: Poppins;
 }
 .container {

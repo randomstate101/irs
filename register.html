@@ -2,7 +2,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>IRS Login</title>
+<title>IRS Register</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"> 
 <link rel="stylesheet" href="css/style.css">
@@ -11,8 +11,9 @@
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/variables.css">
+
 <style >
-	body {
+body {
 	font-size: 13px;
     line-height: 1.8;
     color: $black-color;
@@ -23,59 +24,59 @@
     background-attachment: fixed;
     background-size: cover;
     font-family: Poppins;
-}
+}    
+
 </style>
 
 
+
+
 </head>
-
-
 <body data-gr-c-s-loaded="true">
 <div class="main">
 
-<section class="sign-in">
+<section class="signup">
 <div class="container">
-<div class="signin-content">
-<div class="signin-image">
-<figure><img src="css/signin-image.jpg" alt="sign up image"></figure>
-
-
-
+<div class="signup-content">
+<div class="signup-form">
+<h2 class="form-title">Registration</h2>
+<form method="POST" class="register-form" id="register-form" action="login.html">
+<div class="form-group">
+<label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+<input type="text" name="name" id="name" placeholder="Your Name">
 </div>
-<div class="signin-form">
-<h2 class="form-title"> Login </h2>
-<form method="POST" class="register-form" id="login-form" action="intern_dashboard.html" >
 <div class="form-group">
 <label for="email"><i class="zmdi zmdi-email"></i></label>
 <input type="email" name="email" id="email" placeholder="Your Email">
 </div>
 <div class="form-group">
-<label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-<input type="password" name="your_pass" id="your_pass" placeholder="Password">
+<label for="pass"><i class="zmdi zmdi-lock"></i></label>
+<input type="password" name="pass" id="pass" placeholder="Password">
 </div>
 <div class="form-group">
-<input type="checkbox" name="remember-me" id="remember-me" class="agree-term">
-<label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
+<label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+<input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password">
 </div>
-<div class="form-group form-button">
-<input type="submit" name="signin" id="signin" class="form-submit" value="Log in">
+<div class="form-group">
+<input type="checkbox" name="agree-term" id="agree-term" class="agree-term">
+<label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in <a href="#" class="term-service">Terms of service</a></label>
+</div>
+<div class="form-group form-button"> 
+<input type="submit" name="signup" id="signup" class="form-submit" value="Register"> </a>
+</div>
+<div class="form-group">
+<a href="login.html"> I am already member </a>
 </div>
 </form>
-<div>
-<a href="#"> Create an Account </a>
 </div>
-<div class="social-login">
-<span class="social-label">login with</span>
-<ul class="socials">
-<li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-<li><a href="#"><i class="display-flex-center zmdi zmdi-apple"></i></a></li>
-<li><a href="#"><i class="display-flex-center zmdi zmdi-linkedin"></i></a></li>
-</ul>
-</div>
+
+<div class="signup-image">
+<figure><img src="css/Screenshot_2020-05-30 avatar-construction.png" alt="sign up image"></figure>
 </div>
 </div>
 </div>
 </section>
+
 </div>
 
 <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="vendor/jquery/jquery.min.js" type="text/javascript"></script>
@@ -92,6 +93,3 @@
 
 </body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span>
 </html>
-
-
-
