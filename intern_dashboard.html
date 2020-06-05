@@ -14,19 +14,19 @@
 <body>
 
 
-<header class="text-gray-700 body-font" style="background-color:#f7f9f9">
+<header class="text-gray-700 body-font" style="background: linear-gradient(to right, #fff 50% ,#16469d 40%)">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="#" onMouseOver="this.style.backgroundColor='#'" onMouseOut="this.style.backgroundColor='#f7f9f9' ">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="#" >
       <img alt="blog" src="css2/img/logo.png" class="w-8 h-8 rounded-full flex-shrink-0 object-cover object-center">
-      <span class="ml-3 text-xl" style="color: #16469d" >Intern Dashboard</span>
+      <span class="ml-3 text-xl" style="color: #16469d" onMouseOver="this.style.backgroundColor='#e74c3c'" onMouseOut="this.style.backgroundColor='#FFFFFF' ">Intern Dashboard</span>
     </a>
-    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center" style="color: #16469d">
-      <a class="mr-5 hover:text-gray-900" href="#">Home</a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center" style="color: #fff">
+      <a class="mr-5 hover:text-gray-900" href="IRS/Home page material/home page code/homepage.html">Home</a>
       <a class="mr-5 hover:text-gray-900"href="#">Second Link</a>
       <a class="mr-5 hover:text-gray-900"href="#">Third Link</a>
       <a class="mr-5 hover:text-gray-900"href="#">Fourth Link</a>
     </nav>
-    <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Logout
+    <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0" onclick="myFunction()">Logout
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
@@ -385,6 +385,13 @@
 
 
 
+
+<script>
+function myFunction() {
+  alert("You have been Successfully logged out!");
+  window.location.href = "IRS/Home page material/home page code/homepage.html";
+}
+</script>
 
 <script>
 var slideIndex = 0;
