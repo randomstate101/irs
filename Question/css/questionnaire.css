@@ -57,7 +57,7 @@ body, p {
 
 .tc-pop{
     width: 50%;
-    height: 60%;
+    height: 75%;
     background-color: white;
     border-radius: 5px;
     padding: 20px;
@@ -76,11 +76,15 @@ body, p {
 
 .tynote{
     width: 30%;
-    height: 25%;
+    height: 28%;
     border-radius: 5px;
     background-color: white;
     padding: 20px;
     text-align: center;
     display: none;
     
+}
+
+input[type="radio"] {
+    margin: 0 10px 0 30px;
 }
